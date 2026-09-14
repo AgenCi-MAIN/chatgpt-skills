@@ -1,4 +1,11 @@
-# Repository Audit Report
+# Historical Repository Audit Report
+
+> Historical snapshot: the statements below describe the former 100-skill catalog,
+> not the current repository. The current catalog contains 12 skills. This report
+> does not establish current security, dependency, or runtime correctness. Run
+> `python3 audit_all_skills.py`, `python3 verify_docs.py`, and
+> `python3 -m unittest discover tests` for current structural validation.
+
 **Date:** 2025-12-15
 **Repository:** chatgpt-skills
 **Status:** ✅ READY FOR PUBLICATION

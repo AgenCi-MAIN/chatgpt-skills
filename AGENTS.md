@@ -9,7 +9,7 @@
 ## Build, Test, and Development Commands
 - `python3 skill-creator/scripts/init_skill.py my-new-skill --path .` scaffold a compliant skill folder.
 - `python3 skill-creator/scripts/quick_validate.py path/to/skill` quick check of frontmatter naming and description.
-- `python3 audit_all_skills.py` full repository audit (structure, shebangs, requirements hints).
+- `python3 audit_all_skills.py` check skill structure, required metadata and requirements files, and Python syntax.
 - `python3 verify_docs.py` ensure README/CLAUDE skill lists match actual folders.
 - `python3 skill-creator/scripts/package_skill.py path/to/skill [./dist]` validate then zip a skill for distribution.
 

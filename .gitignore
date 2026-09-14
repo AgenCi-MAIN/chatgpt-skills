@@ -38,7 +38,6 @@ secrets/
 credentials/
 *.pem
 *.key
-!**/assets/*.key  # Allow key files in assets folders (may be sample data)
 
 # Output files
 output/
@@ -46,14 +45,17 @@ output/
 *.png
 *.jpg
 *.svg
-!**/assets/**  # Allow all files in assets folders
-!**/references/**  # Allow all files in references folders
+# Permit generated visual examples in assets and references.
+!**/assets/**/*.pdf
+!**/assets/**/*.png
+!**/assets/**/*.jpg
+!**/assets/**/*.svg
+!**/references/**/*.pdf
+!**/references/**/*.png
+!**/references/**/*.jpg
+!**/references/**/*.svg
 
 # Testing
 .pytest_cache/
 .coverage
 htmlcov/
-
-# Skill-specific ignores
-audit_all_skills.py
-verify_docs.py
