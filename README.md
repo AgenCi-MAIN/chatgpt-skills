@@ -45,6 +45,8 @@ python3 skill-creator/scripts/package_skill.py my-skill ./dist
 
 ## Notes
 
+- GitHub Actions runs structural validation, catalog checks, and the dependency-free repository tests on pull requests and pushes to `main`.
+- Structural checks do not establish runtime correctness or the vulnerability status of optional dependencies.
 - The old micro-skill catalog was intentionally pruned.
 - Overlapping image, media, geo, and analytics utilities were merged into broader suites.
 - Repo docs are verified against the actual skill folders with `verify_docs.py`.

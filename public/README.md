@@ -9,7 +9,8 @@ python -m unittest discover tests
 ```
 2) Save the output for sharing:
 ```bash
-python -m unittest discover tests | tee public/test-report.txt
+set -o pipefail
+python -m unittest discover tests 2>&1 | tee public/test-report.txt
 ```
 3) Commit `public/test-report.txt` (or date-stamped copies) when you want to make results visible.
 
@@ -18,5 +19,7 @@ python -m unittest discover tests | tee public/test-report.txt
 - Baseline docs: `README.md` and `CLAUDE.md` exist and are non-empty.
 
 ## Notes
+- The report command uses Bash; `pipefail` preserves a failing test exit status.
+- `templates/product_launch.json` preserves a template from the retired social-media skill; it is not an active skill.
 - Keep reports lightweight and text-based; regenerate after adding or updating skills.
 - If tests are expanded (e.g., linting, packaging dry-runs), mention the new coverage at the top of the report.
